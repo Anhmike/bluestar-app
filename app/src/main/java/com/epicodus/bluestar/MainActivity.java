@@ -10,7 +10,7 @@ import android.widget.Button;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.viewDonutsButton) Button mViewDonutsButton;
 
     @Override
@@ -18,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        mViewDonutsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DonutListActivity.class);
-                startActivity(intent);
-            }
-        });
+        mViewDonutsButton.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        if(view == mViewDonutsButton) {
+            Intent intent = new Intent(MainActivity.this, DonutListActivity.class);
+            startActivity(intent);
+        }
     }
 }
