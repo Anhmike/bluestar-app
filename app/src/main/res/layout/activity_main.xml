@@ -38,7 +38,7 @@
         android:text="Our donuts are made from a classic brioche recipe that originated in the south of France. The dough takes 18 hours to make and is made from scratch every day; we start with a sustainable bread flour from Shepherds Grain, add cage free eggs, whole hormone-free milk, and then fold in a European-style butter. Our donuts, glazes, and fillings are made fresh throughout the day, and we only cook our donuts in rice oil. Selections change daily and sell out quickly."
         android:id="@+id/introTextView"
         android:allowUndo="false"
-        android:textSize="15dp"
+        android:textSize="17dp"
         android:textAlignment="center"
         android:layout_below="@+id/logoImageView"
         android:layout_alignParentLeft="true"
