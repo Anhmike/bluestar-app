@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.viewDonutsButton) Button mViewDonutsButton;
+    @Bind(R.id.addressListButton) Button mAddressListButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +20,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mViewDonutsButton.setOnClickListener(this);
+        mAddressListButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         if(view == mViewDonutsButton) {
             Intent intent = new Intent(MainActivity.this, DonutListActivity.class);
+            startActivity(intent);
+        }
+        if(view == mAddressListButton) {
+            Intent intent = new Intent(MainActivity.this, DonutLocationActivity.class);
             startActivity(intent);
         }
     }

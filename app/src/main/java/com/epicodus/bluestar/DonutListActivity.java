@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
+
+import java.util.HashMap;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -23,6 +26,8 @@ public class DonutListActivity extends AppCompatActivity {
             "Lemon Poppyseed",
             "Banana Walnut Fritter"
     };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
