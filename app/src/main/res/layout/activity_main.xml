@@ -7,10 +7,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.epicodus.bluestar.MainActivity">
+    tools:context="com.epicodus.bluestar.MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Our Donuts!"
+        android:id="@+id/donutList"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        android:background="#0a6892"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Our donuts are made from a classic brioche recipe that originated in the south of France. The dough takes 18 hours to make and is made from scratch every day; we start with a sustainable bread flour from Shepherds Grain, add cage free eggs, whole hormone-free milk, and then fold in a European-style butter. Our donuts, glazes, and fillings are made fresh throughout the day, and we only cook our donuts in rice oil. Selections change daily and sell out quickly."
+        android:id="@+id/introTextView"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/donutList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:allowUndo="false"
+        android:textSize="16dp"
+        android:textAlignment="center" />
 </RelativeLayout>
